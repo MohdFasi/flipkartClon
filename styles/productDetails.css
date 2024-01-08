@@ -14,6 +14,7 @@
     margin: 2px auto;
     display: flex;
     justify-content: space-between;
+    min-height: 90vh;
 }
 .pd-imgcontainer{
     width: 38%;
@@ -126,4 +127,65 @@
     font-size: 12px;
     vertical-align: middle;
     background-color: #388e3c;
+}
+.discOff{
+    font-weight: 500;
+    text-align: left;
+    color: #388e3c;
+    margin: 12px 0 0;
+}
+.ProdPrice{
+    display: flex;
+    padding-top: 12px;
+    gap: 4px;
+}
+.discPrice{
+    font-size: 28px;
+    vertical-align: sub;
+    display: inline-block;
+    font-weight: 500;
+    color: #212121;
+}
+.actPrice{
+    font-size: 16px;
+    margin-left: 12px;
+    vertical-align: middle;
+    color: #878787;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+.discount{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #388e3c;
+    vertical-align: middle;
+    display: inline-block;
+}
+.packfee{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto;
+}
+
+.prodDescWrap{
+    display: flex;
+    font-size: 14px;
+    margin-top: 24px;
+    gap: 2%;
+}
+.desc{
+    padding-right: 10px;
+    color: #878787;
+    font-weight: 500;
+    font-size: 14px;
+}
+.prodDecsription{
+    font-size: 14px;
+    color: #212121;
+    margin: 0 0 10px;
+    line-height: 1.5em;
+    max-height: 100px;
+    overflow: hidden;
 }

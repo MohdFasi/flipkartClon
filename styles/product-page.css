@@ -126,7 +126,7 @@ header{
     padding: 8px;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     gap: 10px;
 }
 .filter{
@@ -139,7 +139,7 @@ header{
     background-color: white;
     width: 100%;
     height: 100%;
-
+    padding: 12px 16px 0;
 }
 .productPath div{
     font-size: 12px;
@@ -165,6 +165,69 @@ header{
     width: 20px;
     transform: rotate(180deg);
     vertical-align: middle
+}
+
+/* changes Made */
+.singleProductOverview{
+    display: grid;
+    grid-template-columns: 200px 3fr 2fr;
+    color: black;
+}
+.po-detailsContainer{
+    padding: 0 30px;
+}
+.prodTitle{
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+}
+.po-imgWrap{
+    padding: 20px;
+}
+.po-imgWrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.productCount{
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.po-priceWrap{
+    display: flex;
+    gap: 10px;
+    
+}
+.prodOprice{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #878787;
+    font-weight: normal;
+}
+.prodDiscount{
+    color: #388e3c;
+    font-size: 13px;
+    letter-spacing: -.2px;
+    font-weight: 500;
+}
+.po-imgContainer{
+    position: relative;
+}
+.po-addFavWrap{
+    position: absolute;
+    right: -8px;
+    top: 2px;
+}
+.po-addFavWrap svg path{
+    fill: gray;
+    stroke: rgb(255, 255, 255);
+    fill-rule: evenodd;
+    opacity: 0.9;
 }
 @media (max-width: 768px){
     .header{
